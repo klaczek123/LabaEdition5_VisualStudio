@@ -21,3 +21,25 @@ int main()
 	return 0;
 }
 
+void Initialize()
+{
+	cout << "Initialize" << endl;
+}
+
+void GetInput()
+{
+	cout << "GetInput" << endl;
+}
+void Update()
+{
+	cout << "Update" << endl;
+}
+void Render()
+{
+	cout << "Render" << endl;
+}
+
+void Shutdown()
+{
+	cout << "Shutdown" << endl;
+}
