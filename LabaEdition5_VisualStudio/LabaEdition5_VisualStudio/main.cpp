@@ -17,6 +17,17 @@ int main()
 
 	cout << "Hello" << endl;
 
+	Initialize();
+
+	while (true)
+	{
+		GetInput();
+		Update();
+		Render();
+	}
+
+	Shutdown();
+
 
 	return 0;
 }
