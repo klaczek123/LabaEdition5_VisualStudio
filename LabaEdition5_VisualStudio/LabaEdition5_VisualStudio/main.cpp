@@ -2,6 +2,16 @@
 
 using namespace std;
 
+
+void Initialize();
+
+void GetInput();
+void Update();
+void Render();
+
+void Shutdown();
+
+
 int main()
 {
 
@@ -10,3 +20,4 @@ int main()
 
 	return 0;
 }
+
