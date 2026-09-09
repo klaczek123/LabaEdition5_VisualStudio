@@ -15,8 +15,6 @@ void Shutdown();
 int main()
 {
 
-	cout << "Hello" << endl;
-
 	Initialize();
 
 	while (true)
