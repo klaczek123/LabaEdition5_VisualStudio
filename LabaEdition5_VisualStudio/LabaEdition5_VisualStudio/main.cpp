@@ -11,21 +11,49 @@ void Render();
 
 void Shutdown();
 
+// 1. Preprocesor - analizuje dyrektywe preprocesora (makra) #include, #define itd inne #
+// 2. Kompliator  - osobno lda kazdego pliku .cpp -> .obj
+// 3. Linker - ³¹czy pliki .obj w jeden plik wykonywalny, linkuje wyniki wszystkich jednostek kompilacji -> .exe 
+
+
+
+
+
+
+#define HELLO std:: cout << "hello" << std::endl;
+#define PRINTNAME(name)std::cout<<"Your name is: " << name << std::endl;
+#define DEBUG_CODE
+
+//#define ORBIS
+#define WIN
+#define EDITOR
+
 
 int main()
 {
-
+	HELLO
 	Initialize();
 
-	while (true)
+	PRINTNAME("Kuba")
+
+	//while (true)
 	{
 		GetInput();
 		Update();
 		Render();
 	}
 
-	Shutdown();
+#ifdef DEBUG_CODE
+	std::cout << "Some debug information" << std::endl;
+#endif
 
+#ifdef ORBIS
+		std::cout << "Some playstation code" << std::endl;
+#endif
+
+	Shutdown();
+	
+	HELLO
 
 	return 0;
 }
